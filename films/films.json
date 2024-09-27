@@ -1,0 +1,35 @@
+[
+    {
+        "id": "877817",
+        "title": "Wolfs",
+        "popularity": 78.483,
+        "poster_path": "/vOX1Zng472PC2KnS0B9nRfM8aaZ.jpg",
+        "vote_average": 7.4,
+        "vote_count": 8
+
+    },
+    {
+        "id": "1108566",
+        "title": "Killer Heat",
+        "popularity": 70.911,
+        "poster_path": "/WiAEiqelck0NGWplhL5JQR12eg.jpg",
+        "vote_average": 6.333,
+        "vote_count": 18
+    },
+    {
+        "id": "1079091",
+        "title": "It Ends with Us",
+        "popularity": 1913.34,
+        "poster_path": "/AjV6jFJ2YFIluYo4GQf13AA1tqu.jpg",
+        "vote_average": 6.905,
+        "vote_count": 494
+    },
+    {
+        "id": "1215162",
+        "title": "Kill 'em All 2",
+        "popularity": 165.729,
+        "poster_path": "/wCESzMHGkQoVTUNCpH72zuIewWH.jpg",
+        "vote_average": 6.5,
+        "vote_count": 19
+    }
+]
