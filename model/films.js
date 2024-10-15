@@ -5,7 +5,7 @@ const filmsPath = path.join(__dirname, "./films/films.json");
 const creditPath = path.join(__dirname, "./cast/cast.json");
 const reviewsPath = path.join(__dirname, "./reviews/reviews.json");
 
-async function filmsList() {
+const filmsList = async() => {
   try {
     const data = await fs.readFile(filmsPath, "utf-8");
     const films = JSON.parse(data);
@@ -15,7 +15,7 @@ async function filmsList() {
   }
 }
 
-async function creditList() {
+const creditList = async() => {
   try {
     const data = await fs.readFile(creditPath, "utf-8");
     const credits = JSON.parse(data);
@@ -25,7 +25,7 @@ async function creditList() {
   }
 }
 
-async function getFilmsId(filmsId) {
+const getFilmsId =  async(filmsId) => {
   try {
     const id = String(filmsId);
     const films = await filmsList();
@@ -36,7 +36,7 @@ async function getFilmsId(filmsId) {
   }
 }
 
-async function getFilmsByName(title) {
+const getFilmsByName = async(title) => {
   try {
     const name = String(title);
     const films = await filmsList();
@@ -47,7 +47,7 @@ async function getFilmsByName(title) {
   }
 }
 
-async function getMovieCredits(movieId) {
+const getMovieCredits = async(movieId)=> {
   try {
     const id = Number(movieId);
 
@@ -56,7 +56,7 @@ async function getMovieCredits(movieId) {
     const credit = credits.find((credit) => credit.id === id);
 
     if (!credit) {
-      console.log("Кредит не найден для данного ID.");
+      console.log("Акторов не найдено для данного ID.");
       return null;
     }
 
@@ -69,7 +69,7 @@ async function getMovieCredits(movieId) {
   }
 }
 
-async function getMovieReviews(movieId) {
+  const getMovieReviews = async(movieId) => {
   try {
     const id = Number(movieId);
 
